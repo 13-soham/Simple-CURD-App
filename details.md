@@ -1,0 +1,12 @@
+# Simple CURD App
+ - use react router, tailwind, local storage and redux toolkit for state managment
+ - main page having nav bar and blank space to add cards
+ - nav bar contain left and right
+ - left contain App name 
+ - right contain dark/light, add product, pomodoro Timer, about us 
+ - clicking App name backs to the main page
+ - clicking add product goes another page
+ - there we are given a card where we give a photo url, heading and drescription in it
+ - it also have submit button on bottom
+ - after submit card saves in main page
+ - in main page card also have edit and delete button on it
