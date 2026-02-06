@@ -7,10 +7,14 @@ const NotePage = () => {
     const [Heading, setHeading] = useState("");
     const [Photo, setPhoto] = useState("");
     const [Text, setText] = useState("");
-    const [AllData, setAllData] = useState([]);
+    const [AllData, setAllData] = useState(JSON.parse(localStorage.getItem("myNotes")) || []);
     const [EditId, setEditId] = useState(null);
     const [isExpand, setisExpand] = useState(null);
     const [imp, setimp] = useState(false);
+
+    useEffect(()=>{
+        localStorage.setItem("myNotes", JSON.stringify(AllData));
+    }, [AllData]);
 
     function submitHandler(e) {
         e.preventDefault();
